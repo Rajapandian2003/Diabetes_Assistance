@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Diabetes Test</title>
+        <link rel="stylesheet" href="styles.css">
+
+        <style>
+
+        .container{
+            background: linear-gradient(to right, #61dafb, #0073e6);
+            margin-top: 40px;
+            width: 500px;
+            margin-bottom: 10px;
+        }
+        .img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 30px;
+    margin-top: 0px;
+    justify-content: space-evenly;
+}
+
+.img img{
+    border-radius: 20px;
+}
+    </style>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="logo">Diabetes Assistance</div>
+                <div id="menu-icon" class="menu-icon">&#9776;</div>
+                <ul class="nav-links">
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="index.html">Logout</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="container">
+            <h1>Diabetes Test</h1>
+            <form id="test-form">
+                <label for="height">Height (cm):</label>
+                <input type="number" id="height" required>
+
+                <label for="weight">Weight (kg):</label>
+                <input type="number" id="weight" required>
+
+                <label for="bloodSugar">Blood Sugar Level (mg/dL):</label>
+                <input type="number" id="sugar-level" required>
+
+                <button type="submit">Check</button>
+            </form>
+            <div id="result"></div>
+        </div>
+
+        <section class="about-content">
+            <h1>Impotant</h1>
+            <p>A normal fasting blood glucose level is between 70 and 100
+                milligrams per deciliter (mg/dL). Learn how to manage diabetes
+                and maintain a healthy lifestyle.</p>
+            <p>Low blood sugar: A blood sugar level below 70 mg/dL (3.9
+                mmol/L),Immediate action: A blood sugar level below 54 mg/dL
+                (3.0 mmol/L) </p>
+            <p>A blood sugar level of 126 milligrams per deciliter (mg/dL) or
+                higher on two separate tests indicates diabetes</p>
+        </section>
+
+        <div class="img">
+            <img src="img/suger.jpeg" alt height="300px" width="300px">
+        </div>
+
+        <footer>
+            <p>&copy; 2024 Diabetes Portal. All Rights Reserved.</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>

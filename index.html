@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Assistance</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Diabetes Assistance</div>
+            <div id="menu-icon" class="menu-icon">&#9776;</div>
+            <ul class="nav-links">
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">SignUp</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>WELCOME TO DIABETES ASSISTANCE PORTAL</h1>
+            <p>Empowering you to take control of your health with diabetes care.</p>
+            <div class="form-container">
+                <a href="signup.html" class="btn">Sign Up</a>
+                <a href="login.html" class="btn">Login</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Diabetes Portal. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        const menuIcon = document.getElementById('menu-icon');
+        const navLinks = document.querySelector('.nav-links');
+        
+        menuIcon.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

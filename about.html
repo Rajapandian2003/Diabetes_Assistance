@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Diabetes</title>
+    <link rel="stylesheet" href="styles.css">
+    
+
+    <style>
+        /* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #292b2c;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar .logo {
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.navbar .nav-links {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .nav-links li {
+    margin-left: 20px;
+}
+
+.navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar .nav-links a:hover {
+    color: #61dafb;
+}
+
+/* Mobile Menu Icon */
+#menu-icon {
+    display: none;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Content Styling */
+.about-content {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: auto;
+    text-align: left;
+}
+
+.about-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #292b2c;
+    text-align: center;
+}
+
+.about-content p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+/* Footer */
+footer {
+    background-color: #292b2c;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 30px;
+    margin-top: 0px;
+    justify-content: space-evenly;
+}
+
+.img img{
+    border-radius: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar .nav-links {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #292b2c;
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .navbar .nav-links.active {
+        display: flex;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar .nav-links li {
+        margin: 15px 0;
+    }
+
+    .about-content h1 {
+        font-size: 2rem;
+    }
+
+    .about-content p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .about-content p {
+        font-size: 0.9rem;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Diabetes Assistance</div>
+            <div id="menu-icon" class="menu-icon">&#9776;</div>
+            <ul class="nav-links">
+                <li><a href="index.php">Home</a></li>
+                <li><a href="test.html">Test</a></li>
+                <li><a href="index.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="about-content">
+        <h1>About Diabetes</h1>
+        <p>Diabetes is a chronic condition that affects the way your body processes blood sugar (glucose). Learn how to manage diabetes and maintain a healthy lifestyle.</p>
+        <p>There are different types of diabetes, but the most common ones are Type 1, Type 2, and gestational diabetes.</p>
+        <p>Proper management, including a balanced diet, regular physical activity, and monitoring blood sugar levels, can help you live a healthier life with diabetes.</p>
+        <h1>Diabetes Prevention</h1>
+        <p>Maintain a healthy weight : Losing weight can improve how your body uses insulin and glucose. The American Diabetes Association recommends losing at least 7–10% of your body weight to prevent diabetes progression. 
+        <p>Stay active : Try to get at least 30 minutes of moderate exercise each day. You can try taking a walk, playing a sport, or doing an online exercise class.</p> 
+        <p>Eat healthy : Avoid sugar and saturated fat, and try to eat healthier fats like unsalted nuts, seeds, avocados, olive oil, rapeseed oil, and sunflower oil.</p> 
+        <p>Quit smoking : Smoking tobacco can increase your risk of developing diabetes.</p></p>
+    </section>
+
+    <div class="img">
+        <img src="img/index.jpeg" alt="" height="300px" width="300px">
+        <img src="img/index2.jpeg" alt="" height="300px" width="300px">
+        <img src="img/indes3.jpeg" alt="" height="300px" width="300px">
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Diabetes Portal. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        const menuIcon = document.getElementById('menu-icon');
+        const navLinks = document.querySelector('.nav-links');
+        
+        menuIcon.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
